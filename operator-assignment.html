@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator-Augmented-Assignment</title>
+</head>
+<body>
+    <script>
+        let result = 10 * 5;//50
+        document.writeln("<p>10 * 5 = " + result + "</p>");
+        let originalResult = result; //50
+
+        result += 10; //60
+        document.writeln("<p>" + originalResult + " + 10 = " + result + "</p>");
+        originalResult = result; //60
+
+        result -= 5; //55
+        document.writeln("<p>" + originalResult + " - 5 = " + result + "</p>");
+
+
+    </script>
+</body>
+</html>
