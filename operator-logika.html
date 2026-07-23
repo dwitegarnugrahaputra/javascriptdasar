@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator-logika</title>
+</head>
+<body>
+    <script>
+        const nilaiUjian = 65;
+        const nilaiAbsen = 80;
+        const nilaiTugas = 40;
+        const nilaiAkhir = (nilaiUjian + nilaiAbsen + nilaiTugas) / 3;
+
+        const lulusUjian = nilaiUjian > 60;
+        document.writeln("<p>" + lulusUjian + "</p>");
+        const lulusAbsen = nilaiAbsen > 70;
+        document.writeln("<p>" + lulusAbsen + "</p>");
+        const lulusTugas = nilaiTugas > 70;
+        document.writeln("<p>" + lulusTugas + "</p>");
+        const lulusAkhir = nilaiAkhir > 70;
+        document.writeln("<p>" + lulusAkhir + "</p>");
+
+        const lulus = lulusUjian && lulusAbsen && lulusTugas && lulusAkhir;
+        const tidakLulus = !lulus;
+        document.writeln("<p>" + lulus + "</p>");
+        document.writeln("<p>" + tidakLulus + "</p>");
+    </script>
+</body>
+</html>
